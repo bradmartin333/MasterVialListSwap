@@ -51,7 +51,7 @@
             this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.TableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.TableLayoutPanel.Controls.Add(this.BtnSelDest, 1, 1);
             this.TableLayoutPanel.Controls.Add(this.BtnSelA, 1, 2);
             this.TableLayoutPanel.Controls.Add(this.BtnSelB, 1, 3);
@@ -63,7 +63,7 @@
             this.TableLayoutPanel.Controls.Add(this.LblStatus, 3, 1);
             this.TableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TableLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
             this.TableLayoutPanel.Name = "TableLayoutPanel";
             this.TableLayoutPanel.RowCount = 5;
             this.TableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -125,7 +125,7 @@
             this.TxtDest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDest.Location = new System.Drawing.Point(194, 27);
             this.TxtDest.Name = "TxtDest";
-            this.TxtDest.Size = new System.Drawing.Size(509, 26);
+            this.TxtDest.Size = new System.Drawing.Size(508, 26);
             this.TxtDest.TabIndex = 3;
             // 
             // TxtA
@@ -134,7 +134,7 @@
             this.TxtA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtA.Location = new System.Drawing.Point(194, 68);
             this.TxtA.Name = "TxtA";
-            this.TxtA.Size = new System.Drawing.Size(509, 26);
+            this.TxtA.Size = new System.Drawing.Size(508, 26);
             this.TxtA.TabIndex = 4;
             // 
             // TxtB
@@ -143,7 +143,7 @@
             this.TxtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtB.Location = new System.Drawing.Point(194, 109);
             this.TxtB.Name = "TxtB";
-            this.TxtB.Size = new System.Drawing.Size(509, 26);
+            this.TxtB.Size = new System.Drawing.Size(508, 26);
             this.TxtB.TabIndex = 5;
             // 
             // BtnPushB
@@ -152,7 +152,7 @@
             this.BtnPushB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnPushB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPushB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPushB.Location = new System.Drawing.Point(709, 105);
+            this.BtnPushB.Location = new System.Drawing.Point(708, 105);
             this.BtnPushB.Name = "BtnPushB";
             this.BtnPushB.Size = new System.Drawing.Size(165, 35);
             this.BtnPushB.TabIndex = 7;
@@ -166,7 +166,7 @@
             this.BtnPushA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnPushA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPushA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPushA.Location = new System.Drawing.Point(709, 64);
+            this.BtnPushA.Location = new System.Drawing.Point(708, 64);
             this.BtnPushA.Name = "BtnPushA";
             this.BtnPushA.Size = new System.Drawing.Size(165, 35);
             this.BtnPushA.TabIndex = 8;
@@ -179,7 +179,7 @@
             this.LblStatus.AutoSize = true;
             this.LblStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblStatus.Location = new System.Drawing.Point(709, 20);
+            this.LblStatus.Location = new System.Drawing.Point(708, 20);
             this.LblStatus.Name = "LblStatus";
             this.LblStatus.Size = new System.Drawing.Size(165, 41);
             this.LblStatus.TabIndex = 9;
@@ -189,7 +189,7 @@
             // 
             // Timer
             // 
-            this.Timer.Interval = 2000;
+            this.Timer.Interval = 1000;
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Form1
@@ -200,7 +200,7 @@
             this.Controls.Add(this.TableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Master Vial List Swap";
             this.TableLayoutPanel.ResumeLayout(false);

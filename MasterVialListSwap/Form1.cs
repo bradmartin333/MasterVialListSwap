@@ -29,27 +29,29 @@ namespace MasterVialListSwap
             BtnPushA.Enabled = false;
             BtnPushB.Enabled = false;
 
+            foreach (TextBox text in TableLayoutPanel.Controls.OfType<TextBox>())
+                text.BackColor = SystemColors.Control;
+
             if (!string.IsNullOrEmpty(DestPath))
             {
                 FileInfo fileInfo = new FileInfo(DestPath);
                 string ext = fileInfo.Extension;
 
                 foreach (TextBox text in TableLayoutPanel.Controls.OfType<TextBox>())
-                    text.BackColor = string.IsNullOrEmpty(text.Text) ? Color.Firebrick : Color.LawnGreen;
+                    text.BackColor = string.IsNullOrEmpty(text.Text) ? Color.Firebrick : (File.Exists(text.Text) ? Color.LawnGreen : Color.Firebrick);
 
-                if (TxtA.BackColor == Color.LawnGreen && !TxtA.Text.EndsWith(ext))
-                    TxtA.BackColor = Color.Firebrick;
-                else if (TxtA.Text == TxtDest.Text || TxtA.Text == TxtB.Text)
-                    TxtA.BackColor = Color.Firebrick;
-                else
-                    BtnPushA.Enabled = true;
+                if (TxtDest.BackColor == Color.LawnGreen)
+                {
+                    if (!TxtA.Text.EndsWith(ext) && (TxtA.Text == TxtDest.Text || TxtA.Text == TxtB.Text))
+                        TxtA.BackColor = Color.Firebrick;
+                    else if (TxtA.BackColor == Color.LawnGreen)
+                        BtnPushA.Enabled = true;
 
-                if (TxtB.BackColor == Color.LawnGreen && !TxtB.Text.EndsWith(ext))
-                    TxtB.BackColor = Color.Firebrick;
-                else if (TxtB.Text == TxtDest.Text || TxtB.Text == TxtA.Text)
-                    TxtB.BackColor = Color.Firebrick;
-                else
-                    BtnPushB.Enabled = true;
+                    if (!TxtB.Text.EndsWith(ext) && (TxtB.Text == TxtDest.Text || TxtB.Text == TxtA.Text))
+                        TxtB.BackColor = Color.Firebrick;
+                    else if (TxtB.BackColor == Color.LawnGreen)
+                        BtnPushB.Enabled = true;
+                }
             }
         }
 
